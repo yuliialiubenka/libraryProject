@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="The largest bookshelf in the world. Here you will find a variety of books - from classics to the latest novelties.">
-    <title>Bookshelf</title>
-    <link rel="icon" type="image/svg+xml" href="./images/logo.svg">
+    <title>Bookshelf - Shopping List</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"
@@ -17,29 +16,25 @@
     <link rel="stylesheet" href="./sass/index.scss" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
-    <script type="module" src="./index.js"></script>
+    <script type="module" src="./js/shopping-list.js"></script>
   </head>
   <body>
     <div class="wrapper">
-      <include src="./partials/loader.html"></include>
       <header>
         <include src="./partials/header.html"></include>
       </header>
       <main>
-        <section class="main section">
-          <div class="main-box container">
-            <div class="main-menu-wrapper">
-              <div class="change-category">
-                <include src="./partials/categoriesmenu.html"></include>
-              </div>
+        <section class="shoppinglist section">
+          <div class="shoppinglist-main-box container">
+            <div class="shoppinglist-menu-wrapper">
               <div>
                 <include src="./partials/support-ukraine.html"></include>
               </div>
             </div>
-            <div class="main-shelf-wrapper">
-              
-                <include src="./partials/mainshelf.html"></include>
-              
+            <div class="shoppinglist-wrapper">
+              <div class="shoppingList-box">
+                <include src="./partials/shopping-list.html"></include>
+              </div>
             </div>
           </div>
         </section>
@@ -47,8 +42,9 @@
       <footer>
         <include src="./partials/footer.html"></include>
       </footer>
-      <include src="./partials/modal-form.html"></include>
-      <include src="./partials/topbtn.html"></include>
     </div>
+
+    <include src="./partials/modal-form.html"></include>
+    <include src="./partials/topbtn.html"></include>
   </body>
 </html>

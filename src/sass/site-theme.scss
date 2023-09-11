@@ -1,0 +1,117 @@
+body.dark-theme {
+
+  background-color: $color-black1;
+  color: $color-white;
+}
+.header-container.dark-theme {
+
+  background-color: $color-black;
+  border: 1.5px solid $color-white;
+}
+
+.select-text.dark-theme {
+
+  color: $color-lightgrey;
+
+}
+.select-text.dark-theme:hover,
+.select-text.dark-theme:focus {
+
+    color: $color-yellow;
+}
+h1.dark-theme {
+
+  color: $color-white;
+}
+.header-container-logo-bookshelf.dark-theme {
+
+  fill: $background-color;
+}
+.header-nav-link.dark-theme {
+
+  color: $color-white;
+}
+.header-nav-shopping-cart.dark-theme {
+
+  fill: $color-white;
+}
+.shoppingList-text.dark-theme {
+
+  color: $color-white1;
+}
+.header-nav-link.dark-theme {
+  color: $color-white;
+}
+.header-nav-link.current.dark-theme {
+  color: $color-black;
+  background-color: #eac645;
+  border-radius: 36px;
+  padding: 8px 16px;
+ .header-nav-shopping-cart {
+  fill: black;
+ }
+}
+.header-burger-menu-icon.dark-theme {
+  stroke: $color-white;
+}
+.label-switch.dark-theme {
+  background: linear-gradient(to bottom, #4F2EE8, #686868);
+}
+.header-burger-menu-icon:hover,
+.header-burger-menu-icon:focus.dark-theme {
+    stroke: $color-violet;
+}
+// SHOPING_LIST
+.books-shoppingListLi.dark-theme {
+  background-color: $color-black;
+}
+.text-shoppingList-title.dark-theme {
+  color: $color-white;
+}
+.shop-shoppingList-img1.dark-theme {
+  filter: brightness(0) invert(1);
+}
+
+.shop-shoppingList-img2.dark-theme {
+  filter: grayscale(100%);
+}
+
+.shop-shoppingList-img1:focus,
+.shop-shoppingList-img2:focus,
+.shop-shoppingList-img1:hover,
+.shop-shoppingList-img2:hover.dark-theme {
+  filter: drop-shadow(0px 3px 3px rgba(255, 255, 255,0.35));
+}
+.text-shoppingList-content.dark-theme {
+   color: $color-white;
+}
+.all.dark-theme {
+  color: $color-yellow;
+}
+.title.dark-theme {
+  color: $color-white;
+}
+// MODAL
+.book-card-modal.dark-theme {
+  background-color: $color-black1;
+  border-color: $color-white;
+}
+.close-modal-icon.dark-theme {
+  fill: $color-white;
+}
+.modal-book-name.dark-theme {
+  color: $color-white;
+}
+.modal-book-author.dark-theme {
+  color: $color-lightgrey;
+}
+.modal-book-description.dark-theme {
+  color: $color-white;
+}
+.js-add.dark-theme {
+  color: $color-white;
+  background-color: $color-black1;
+}
+.first.dark-theme {
+  color: $color-yellow;
+}

@@ -1,20 +1,18 @@
 import { funds } from './funds';
 
-
 function createFundsMarkup(funds) {
   const markup = funds.map((fund, index) => {
     const foundIndex = String(index + 1).padStart(2, '0');
 
     return `
-      <div class="funds__carousel-item swiper-slide">
+      <div class="funds__carousel-item">
         <span class="funds__carousel-item-number">${foundIndex}</span>
         <a class='funds__carousel-item-link' href="${fund.url}" target="_blank" crossorigin="anonymous" rel="noopener noreferrer nofollow" aria-label="${fund.title}">
           <img class="funds__carousel-item-img" src="${fund.img}" alt="${fund.title}" loading="lazy" height="32">
         </a>
       </div>
     `;
-  })
-  .join('');
+  }).join('');
   return markup;
 }
 
@@ -37,7 +35,6 @@ slider.each(function(element) {
   vertical: true,
   centerPadding: 0,
   mobileFirst: false,
-  swipeToSlide: true,
   responsive: [
     {	
       breakpoint: 768,

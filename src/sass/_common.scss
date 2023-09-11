@@ -1,1 +1,259 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+// 
+// VARIABLES
+// 
+
+// Colors
+$color-black: #111111;
+$color-black1: #202024;
+$color-violet: #4F2EE8;
+$color-yellow: #EAC645;
+$color-white: #fff;
+$color-grey: rgba(0, 0, 0, 0.6);
+$color-lightgrey: #B4AFAF;
+$background-color: #F6F6F6;
+$color-white1: rgba(255, 255, 255, 0.6);
+$color-leftmenu: rgba(17, 17, 17, 0.6);
+
+@font-face {
+    font-family: 'DM Sans', sans-serif;
+    src:
+        local("DM Sans"),
+        url("../fonts/DMSans.woff2") format("woff2"),
+        url("../fonts/DMSans.woff") format("woff"),
+        url("../fonts/DMSans.ttf") format("truetype");
+
+}
+
+
+/* Reset styles start */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link {
+    color: currentColor;
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    font-family: inherit;
+    color: currentColor;
+    cursor: pointer;
+}
+
+/* Reset end */
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: $background-color;
+}
+html, body {
+    height: 100%;
+}
+
+// Sections
+main {
+    flex: 1 1 auto;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.shoppinglist {}
+
+// Common
+.container {
+
+    min-width: 320px;
+    max-width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.no-scroll {
+    overflow: hidden;
+    background: radial-gradient(189.32% 190.93% at 59.76% -23.42%, $color-violet 18.03%, $color-white 100%);
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 100%;
+        min-width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .container {
+
+        max-width: 1440px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+.section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+// Boxes
+.main-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+    .main-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+@media only screen and (min-width: 769px) {
+    .main-box {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+@media only screen and (min-width: 1440px) {
+    .main-box {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+.shoppinglist-main-box {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+
+// Wrappers
+.main-menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    max-width: 335px;
+    width: 335px;
+}
+@media only screen and (min-width: 768px) {
+    .main-menu-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 32px;
+
+        max-width: 704px;
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 769px) {
+    .main-menu-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+
+        max-width: 356px;
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 1440px) {
+    .main-menu-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 86px;
+
+        max-width: 356px;
+        width: 100%;
+    }
+}
+
+.shoppinglist-menu-wrapper {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .shoppinglist-menu-wrapper {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .shoppinglist-menu-wrapper {
+        display: block;
+    }
+}
+
+
+.main-shelf-wrapper {
+    max-width: 335px;
+        width: 335px;
+}
+@media only screen and (min-width: 768px) {
+    .main-shelf-wrapper {
+        max-width: 704px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .main-shelf-wrapper {
+        max-width: 996px;
+            width: 100%;
+    }
+}
+
+
+
+.shoppinglist-wrapper {
+    width: 100%;
+}
+
+// Scrollbar for all categories - Firefox
+.select {
+    scrollbar-width: thin;
+    scrollbar-color: e0e0e0 $background-color;
+}
 
