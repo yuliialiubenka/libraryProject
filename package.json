@@ -1,21 +1,21 @@
 {
-  "name": "parcel-project-template",
+  "name": "library-project",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://kriandr79.github.io/project-JuiceDev-js",
+  "homepage": "https://yuliialiubenka.github.io/libraryProject",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /project-JuiceDev-js/"
+    "build": "parcel build src/*.html --public-url /libraryProject/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/yuliialiubenka/libraryProject.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Yuliia Koliesnik <yuliialiubenka@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://github.com/yuliialiubenka/libraryProject/issues"
   },
   "dependencies": {
     "axios": "^1.5.0",
